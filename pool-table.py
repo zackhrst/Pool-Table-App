@@ -11,21 +11,29 @@
     # Total time played
     # cost - if hard mode
 
-
+# Table class
 class PoolTable:
-        def __init__(self, table_number)
-        self.table_number = table_number
-        self.start_time = none
+        def __init__(self, table_number):
+            self.table_number = table_number
+            self.occupied = False
+            self.start_time = None
+            self.end_time = None
+            self.time_played = None
+            self.current_time = None
+        
+        def checkout(self):
+            if self.occupied == False:
+                print("")
+                input("This Table is availble.")
+                return False
+            else: 
+                self.occupied = False
+                self.end_time = 
+                self.time_played = self.end_time - self.start_time
+                return True
+        
+        def checkin(self):
+            if self.occupied = False:
 
-# creating menu
-while True:
-    print("***Main Menu***")
-    if choice == "1":
 
-    elif choice == "2":
-
-    elif choice = "3":
-    
-
-# Menu
 
